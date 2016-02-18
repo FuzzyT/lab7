@@ -10,4 +10,10 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+    $('.thumbnail button').click(recordEvent);
+}
+
+function recordEvent(e){
+    //e.preventdefault();
+    ga("send", "event", 'like', 'click');
 }
